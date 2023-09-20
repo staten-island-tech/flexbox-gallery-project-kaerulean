@@ -6,6 +6,7 @@ html,
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #FE938C;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -15,30 +16,33 @@ html,
     margin: 1rem auto;
     display: flex;
     flex-wrap: wrap;
-    width: 80vw;
-    background-color: rgb(63, 35, 204);
+    width: 90vw;
+    background-color: #ffffff;
+    background-image: url(RYORYORYORYO.jpg);
 }
 
 .card{
     height: 70vh;
     width: 30%;
-    margin: 2.5rem 0;
+    margin: 2.9rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.3)
+    justify-content: space-around;
+    background-color: #006BA6;
+    box-shadow: 5px 5px #ffffff;
 }
 
 .card-title{
   font-size: 2.2rem;
   margin-top: 2rem ;
+  color: #FFBC42;
 }
 
 .card-img{
-    width: 100%;
+    width: 90%;
 }
 
 .card-price{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
