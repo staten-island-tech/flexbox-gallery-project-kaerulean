@@ -6,7 +6,7 @@ html,
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #FE938C;
+    color: #e3e3e9;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -23,7 +23,7 @@ html,
 
 .card{
     height: 70vh;
-    width: 30%;
+    width: 21%;
     margin: 2.9rem 0;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ html,
 .card-title{
   font-size: 2.2rem;
   margin-top: 2rem ;
-  color: #FFBC42;
+  color: #e8e9ed;
 }
 
 .card-img{
@@ -45,4 +45,61 @@ html,
 
 .card-price{
     font-size: 1.5rem;
+}
+
+@keyframes bocchi {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+
+#card-bocchi{
+    background-color: #FE938C;
+}
+
+#card-bocchi.card:hover{
+    background-color: #ff665b;
+    animation-name: bocchi;
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+  
+  
+#card-nijika{
+    background-color: #FFBC42;
+}
+
+#card-nijika:hover{
+    background-color: #ffa600;
+    transform: matrix(1, 2, 3, 2, 5, 6);
+}
+
+@keyframes kita{
+    from{
+        transform: translateY(0%);
+    }
+    to {
+        transform: translateY(20%);
+    }
+}
+
+#card-kita{
+    background-color: #a22522;
+}
+
+#card-kita:hover{
+    background-color: #e13937;
+    animation-name: kita;
+    animation-duration: 100ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.card:hover{
+    background-color: #425eff;
+    transform: scale(2, 0.8);
 }
