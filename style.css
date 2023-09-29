@@ -33,6 +33,20 @@ html,
     box-shadow: 5px 5px #ffffff;
 }
 
+
+@media screen and (max-width: 900px) {
+    .card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 90%;
+    }
+}
+
+
 .card-title{
   font-size: 2.2rem;
   margin-top: 2rem ;
